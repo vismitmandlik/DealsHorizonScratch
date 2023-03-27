@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Deals Horizon</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 	<header>
@@ -10,33 +10,33 @@
 			<ul>
 				<li><a href="#">Home</a></li>
                 <li class="shop-link">
-                    <a href="#">Shop</a>
+                    <a href="{{ url_for('result') }}">Shop</a>
                 <div class="category-table">
                     <table>
                       <tr>
-                        <th>Category 1</th>
-                        <th>Category 2</th>
-                        <th>Category 3</th>
+                        <th>Best Sellers</th>
+                        <th>New Releases</th>
+                        <th>Gift Cards</th>
                       </tr>
                       <tr>
-                        <td><a href="#">Product 1</a></td>
-                        <td><a href="#">Product 4</a></td>
-                        <td><a href="#">Product 7</a></td>
+                        <td><a href="#">Electronics</a></td>
+                        <td><a href="#">Clothing</a></td>
+                        <td><a href="#">Personal Care</a></td>
                       </tr>
                       <tr>
-                        <td><a href="#">Product 2</a></td>
-                        <td><a href="#">Product 5</a></td>
-                        <td><a href="#">Product 8</a></td>
+                        <td><a href="#">Headphones</a></td>
+                        <td><a href="#">Speakers</a></td>
+                        <td><a href="#">Cameras</a></td>
                       </tr>
                       <tr>
-                        <td><a href="#">Product 3</a></td>
-                        <td><a href="#">Product 6</a></td>
-                        <td><a href="#">Product 9</a></td>
+                        <td><a href="#">ACs</a></td>
+                        <td><a href="#">Refrigerators</a></td>
+                        <td><a href="#">Gaming Console</a></td>
                       </tr>
                     </table>
                   </div>
 				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="{{ url_for('contact') }}">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
