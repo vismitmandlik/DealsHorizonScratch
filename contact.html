@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact Us</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='contact-style.css')}}">
+</head>
+<body>
+	<header>
+		<h1>Contact Us</h1>
+	</header>
+
+	<main>
+		<section>
+			<h2>Get in Touch</h2>
+			<form action="#" method="POST">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="subject">Subject:</label>
+				<input type="text" id="subject" name="subject" required>
+
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" required></textarea>
+
+				<input type="submit" value="Send">
+			</form>
+		</section>
+
+		<section>
+			<h2>Contact Information</h2>
+			<ul>
+				<li><strong>Address:</strong> Deals Horizon pvt. ltd. CSPIT CE, Changa, Gujarat, India</li>
+				<li><strong>Phone:</strong> 1-800-123-4567</li>
+				<li><strong>Email:</strong> info@dealshorizon.com</li>
+			</ul>
+		</section>
+	</main>
+    <!-- Footer -->
+        
+    <!-- <footer class="site-footer">
+        <div class="footer-container">
+          <p>&copy; 2023 Deals Horizon</p>
+        </div>
+      </footer> -->
+</body>
+</html>
